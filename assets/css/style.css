@@ -199,3 +199,11 @@ section#advantages .item p{
     text-align: center;
     margin-top: 5px;
 }
+
+section#about-us{
+    color: #fff;
+    margin-bottom: 100px;
+    height: 150vh;
+    background: url("../img/about-us-bg.png") center no-repeat;
+    background-size: 100% 100%;
+}

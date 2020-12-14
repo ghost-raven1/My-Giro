@@ -115,3 +115,60 @@ section.panel{
 .btn-up img{
     width: 25px;
 }
+
+section#first-page{
+    height: 100vh;
+    color: #fff;
+    background-image: url("../img/first-page-bg.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+section#first-page > header{
+    width: 100%;
+    color: #fff;
+}
+
+section#first-page .logo img{
+    width: 100px;
+}
+
+section#first-page .contact > .item p{
+    font-size: 12px;
+}
+
+section#first-page .contact > .item img{
+    width: 25px;
+    margin-right: 15px;
+}
+
+section#first-page .nav{
+    list-style-type: none;
+    display: flex;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}
+
+section#first-page .nav li{
+    padding-left: 35px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+section#first-page .nav li:first-of-type{
+    padding-left: 0;
+}
+
+section#first-page .nav li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #fff;
+    transition: .5s ease-in-out;
+}
+
+section#first-page .nav li:hover::after{
+    width: 50%;
+}

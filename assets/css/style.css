@@ -172,3 +172,30 @@ section#first-page .nav li::after{
 section#first-page .nav li:hover::after{
     width: 50%;
 }
+
+section#advantages{
+    background: transparent;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+section#advantages .item{
+    height: 100%;
+    transform: scale(.6);
+    transition: .5 ease-in-out;
+    user-select: none;
+}
+
+section#advantages .item:hover{
+    transform: scale(.8);
+}
+
+section#advantages .item img{
+    height: 90%;
+}
+
+section#advantages .item p{
+    font-size: 30px;
+    text-align: center;
+    margin-top: 5px;
+}

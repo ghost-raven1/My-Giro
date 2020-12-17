@@ -116,6 +116,7 @@ section.panel{
     width: 25px;
 }
 
+/*Шапка */
 section#first-page{
     height: 100vh;
     color: #fff;
@@ -173,6 +174,7 @@ section#first-page .nav li:hover::after{
     width: 50%;
 }
 
+/*Преимущества */
 section#advantages{
     background: transparent;
     padding-bottom: 50px;
@@ -200,10 +202,320 @@ section#advantages .item p{
     margin-top: 5px;
 }
 
+/*О нас */
 section#about-us{
     color: #fff;
     margin-bottom: 100px;
     height: 150vh;
     background: url("../img/about-us-bg.png") center no-repeat;
     background-size: 100% 100%;
+}
+
+/* Слайдер Партнеры*/
+section#partners .item{
+    font-size: 50px;
+    cursor: default;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    background: #fff;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transform: translateX(-100%);
+    transition-duration: .4s;
+    opacity: 1;
+}
+
+section#partners .item p{
+    width: 100%;
+    font-weight: bold;
+    text-align: center;
+    color: #c5c5c5;
+}
+
+section#partners .item:hover{
+    color: #3d67b0;
+}
+
+section#partners input[type="radio"]{
+    position: absolute;
+    opacity: 0;
+    left: 0;
+    top: 0;
+}
+
+section#partners input[type="radio"]:checked + .partners-label {
+    border: solid 1px #3d67b0;
+    background-color: #3d67b0;
+}
+
+section#partners input[type="radio"]:checked ~ .item {
+    transform: translateX(100%);
+}
+
+section#partners input[type="radio"]:checked + .partners-label + .item {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+section#partners .partners-label{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 1px #e0e0e0;
+    cursor: pointer;
+    margin: 6px !important;
+    transition: .5s ease-in-out;
+}
+
+section#partners #brand-container{
+    overflow: hidden;
+    position: relative;
+}
+
+/* Помогут с выбором */
+section#consultants{
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+section#consultants .item{
+    height: 100%;
+    width: 50%;
+}
+
+section#consultants .item img{
+    height: 200px;
+}
+
+section#consultants .item .item-title{
+    color: #3d67b0;
+    margin-top: 15px;
+    font-size: 25px;
+}
+
+section#consultants .item .item-desctiption{
+    margin-top: 5px;
+    font-size: 17px;
+}
+
+/* Особенности гироскутеров */
+section#about-segway{
+    margin-top: 150px;
+    position: relative;
+}
+
+section#about-segway .section-image{
+    height: 300px;
+}
+
+section#about-segway .title{
+    font-size: 30px;
+    color: #3d67b0;
+}
+
+section#about-segway .title img{
+    margin-right: 15px;
+    width: 30px;
+}
+
+section#about-segway ol{
+    margin-top: 25px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+/* Каталог */
+/*
+section#catalog{
+    padding-top: 100px;
+}
+
+section#catalog .categories{
+    width: 100px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+section#catalog .categories ul{
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+section#catalog input[type="radio"] {
+    position: absolute;
+    opacity: 0;
+}
+
+section#catalog #giroscooters:checked ~ .categories #giroscooters-tab,
+section#catalog #electric_scooters:checked ~ .categories #electric_scooters-tab,
+section#catalog #segway:checked ~ .categories #segway-tab
+{
+    color: #fff;
+    background: #3b67b0;
+}
+
+section#catalog #giroscooters:checked ~ .panels #giroscooters-container,
+section#catalog #electric_scooters:checked ~ .panels #electric_scooters-container,
+section#catalog #segway:checked ~ .panels #segway-container
+{
+    display: flex;
+}
+
+section#catalog .categories li label {
+    display: inline-block;
+    user-select: none;
+    padding: 15px 25px;
+    border: solid 2px #3d67b0;
+    border-radius: 30px;
+    cursor: pointer;
+    color: #3d67b0;
+    transition: .5s ease-in-out;
+}
+
+section#catalog .categories li{
+    margin-left: 25px;
+}
+
+section#catalog .categories li:first-of-type{
+    margin: 0;
+}
+
+section#catalog .catalog-container{
+    display: none;
+}
+
+section#catalog .catalog-container .c-card{
+    width: 320px;
+    border: solid 1px #e1e1e1;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 25px;
+}
+
+section#catalog .catalog-container .c-card img{
+    width: 90%;
+    margin-top: 25px;
+}
+
+section#catalog .catalog-container .c-card .type span{
+    display: inline-block;
+    border-radius: 5px;
+    background: #3d67b0;
+    color: #fff;
+    padding: 1px 7px;
+    margin: 0 15px;
+}
+
+section#catalog .catalog-container .c-card .price-container{
+    padding: 0 15px;
+    margin-top: 15px;
+}
+
+section#catalog .catalog-container .c-card .price-container .price{
+    color: #3d67b0;
+    font-size: 20px;
+}
+*/
+
+/* Полезная информация */
+section#useful-info{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+section#useful-info .u-content{
+    margin-top: 80px;
+}
+
+section#useful-info .content .item {
+    width: 100%;
+    height: 100%;
+}
+
+section#useful-info .content .item img.item-img{
+    object-fit: cover;
+    border-radius: 20px;
+    width: 350px;
+}
+
+section#useful-info .content .item .title{
+    font-size: 30px;
+    color: #3d67b0;
+    margin: 15px 0;
+}
+
+/* Подпись */
+section#sub{
+    height: 100vh;
+    margin-bottom: 15vh;
+    background: url('../img/sub-bg.png') center no-repeat;
+    background-size: 100% 100%;
+}
+
+/* Footer */
+footer{
+    height: 30vh;
+    width: 100%;
+    position: absolute;
+    z-index: 100;
+    top: calc(100 - 15vh);
+    left: 0;
+}
+
+footer .nav{
+    list-style-type: none;
+    display: flex;
+    color: #3d67b0;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+footer .nav li{
+    padding-left: 35px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .nav li:first-of-type{
+    padding-left: 0;
+}
+
+footer .nav li::after{
+    content: "";
+    height: 3px;
+    width: 0;
+    background-color: #3d67b0;
+    transition: .5s ease-in-out;
+}
+
+footer .nav li:hover::after{
+    width: 50%;
+}
+
+footer .footer-logo img{
+    width: 250px;
+}
+
+footer .contact > .item p{
+    font-size: 12px;
+}
+
+footer .contact > .item img{
+    width: 25px;
+    margin-right: 15px;
+}
+
+footer .social-icons img{
+    width: 35px;
+    cursor: pointer;
 }

@@ -330,7 +330,6 @@ section#about-segway ol{
 }
 
 /* Каталог */
-/*
 section#catalog{
     padding-top: 100px;
 }
@@ -344,7 +343,7 @@ section#catalog .categories{
 section#catalog .categories ul{
     list-style-type: none;
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
 }
 
 section#catalog input[type="radio"] {
@@ -354,7 +353,7 @@ section#catalog input[type="radio"] {
 
 section#catalog #giroscooters:checked ~ .categories #giroscooters-tab,
 section#catalog #electric_scooters:checked ~ .categories #electric_scooters-tab,
-section#catalog #segway:checked ~ .categories #segway-tab
+section#catalog #segways:checked ~ .categories #segways-tab
 {
     color: #fff;
     background: #3b67b0;
@@ -362,7 +361,7 @@ section#catalog #segway:checked ~ .categories #segway-tab
 
 section#catalog #giroscooters:checked ~ .panels #giroscooters-container,
 section#catalog #electric_scooters:checked ~ .panels #electric_scooters-container,
-section#catalog #segway:checked ~ .panels #segway-container
+section#catalog #segways:checked ~ .panels #segways-container
 {
     display: flex;
 }
@@ -423,7 +422,7 @@ section#catalog .catalog-container .c-card .price-container .price{
     color: #3d67b0;
     font-size: 20px;
 }
-*/
+
 
 /* Полезная информация */
 section#useful-info{
